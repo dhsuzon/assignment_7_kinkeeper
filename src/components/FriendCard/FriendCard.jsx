@@ -13,8 +13,8 @@ const FriendCard = ({ friend }) => {
     <Link href={`/friend/${friend.id}`}>
       <div className="bg-white border border-[#E9E9E9] p-6 flex  flex-col items-center text-center   cursor-pointer group rounded-md">
        
-        <div className="w-20 h-20 relative mb-4">
-          
+        <div className="w-20 h-20 relative mb-4  ">
+          <Image src={friend.picture} alt={friend.name} width="80" height="80" className="rounded-full"></Image>
         </div>
 
        

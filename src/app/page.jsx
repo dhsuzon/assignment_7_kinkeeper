@@ -3,11 +3,15 @@ import Image from "next/image";
 import FriendCard from "@/components/FriendCard/FriendCard";
 import Banner from "@/components/home/Banner";
 import SummaryCard from "@/components/home/SummaryCard";
-import friendsData from "../../public/friendsData.json"
 
 
+const friendData = async() => {
+    const FrienRes = await fetch("http://localhost:3000/friendsData.json");
+    return FrienRes.json()
+}
 
-export default function Home() {
+ const Home= async() =>{
+    const friendsData = await friendData()
 
   return (
     <div className="flex flex-col flex-1 bg-white font-sans">
@@ -26,3 +30,4 @@ export default function Home() {
     </div>
   );
 }
+export default Home
