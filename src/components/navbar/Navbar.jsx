@@ -37,7 +37,7 @@ const Navbar = () => {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`flex items-center gap-2 px-1 py-1  text-base font-medium  text-[#64748B]
+                  className={`flex items-center gap-1  px-4 py-2 text-base font-medium  text-[#64748B]
                     ${isActive ? " rounded-sm bg-[#244D3F] text-white font-semibold " : " "}`}
                 >
                   {link.icon}
