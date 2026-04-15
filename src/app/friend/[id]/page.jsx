@@ -1,3 +1,6 @@
+
+import QuickCheckIn from "@/components/quickcheckin/QucikCheckIn";
+import { Questrial } from "next/font/google";
 import Image from "next/image";
 import {
   FaClock,
@@ -13,9 +16,7 @@ import {
 async function getFriendData(id) {
   try {
 
-    const res = await fetch(`http://localhost:3000/friendsData.json`, {
-      cache: "no-store",
-    });
+    const res = await fetch(`http://localhost:3000/friendsData.json`);
     if (!res.ok) return null;
     const allFriends = await res.json();
 
@@ -56,9 +57,7 @@ const FriendDetails = async ({ params }) => {
   return (
     <div className="bg-[#F8FAFC] min-h-screen p-4 md:p-10 font-sans">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
-      
         <div className="lg:col-span-4 flex flex-col gap-4">
- 
           <div className="bg-white border border-[#E9E9E9] p-8 flex flex-col items-center rounded-sm shadow-sm">
             <div className="w-24 h-24 relative mb-4">
               <Image
@@ -69,7 +68,9 @@ const FriendDetails = async ({ params }) => {
                 className="rounded-full object-cover border-2 border-gray-50"
               />
             </div>
-            <h2 className="text-xl font-semibold text-[#1F2937]">{friend.name}</h2>
+            <h2 className="text-xl font-semibold text-[#1F2937]">
+              {friend.name}
+            </h2>
 
             <span
               className={`mt-2 py-1.5 px-4 rounded-full text-xs font-medium text-white capitalize tracking-widest ${statusStyles[statusKey] || "bg-gray-400"}`}
@@ -96,7 +97,6 @@ const FriendDetails = async ({ params }) => {
             </p>
           </div>
 
-  
           <div className="flex flex-col gap-3">
             <ActionButton
               icon={<FaClock className="text-gray-400" />}
@@ -110,32 +110,26 @@ const FriendDetails = async ({ params }) => {
           </div>
         </div>
 
-   
         <div className="lg:col-span-8 space-y-6">
- 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <StatBox
               label="Days Since Contact"
-              value={friend.stats?.daysSince || friend.days_since_contact}
-             
-              
+              value={ friend.days_since_contact}
             />
             <StatBox
               label="Goal (Days)"
-              value={friend.stats?.goal || friend.goal}
-           
+              value={ friend.goal}
             />
             <StatBox
               label="Next Due Date"
-              value={friend.stats?.nextDue || friend.next_due_date}
-              isText
+              value={ friend.next_due_date}
+             
             />
           </div>
 
-  
           <div className="bg-white p-6 border border-[#E9E9E9] rounded-sm flex justify-between items-center shadow-sm">
             <div>
-              <h3 className="text-lg font-medium text-[#244D3F] capitalize tracking-widest mb-1">
+              <h3 className="text-lg font-medium text-[#244D3F] capitalize  mb-1">
                 Relationship Goal
               </h3>
               <p className="text-[#64748B] text-lg ">
@@ -146,21 +140,10 @@ const FriendDetails = async ({ params }) => {
               </p>
             </div>
             <button className="py-2 px-4.5  bg-[#F8FAfC] border-on font-medium text-sm text-[#1F2937] rounded">
-             Edit
+              Edit
             </button>
           </div>
-
-       
-          <div className="bg-white p-6 border border-[#E9E9E9] rounded-sm shadow-sm">
-            <h3 className="text-xl font-medium text-[#244D3F] capitalize tracking-widest mb-6">
-              Quick Check-In
-            </h3>
-            <div className="grid grid-cols-3 gap-4 text-[#1F2937]">
-              <CheckInOption icon={<FaPhoneAlt />} label="Call" />
-              <CheckInOption icon={<FaCommentDots />} label="Text" />
-              <CheckInOption icon={<FaVideo />} label="Video" />
-            </div>
-          </div>
+          <QuickCheckIn friendName={friend.name}/>
         </div>
       </div>
     </div>
@@ -185,8 +168,8 @@ function ActionButton({ icon, label, isDanger = false }) {
 
 function StatBox({ label, value}) {
   return (
-    <div className="bg-white p-8 border border-[#E9E9E9] rounded-sm flex flex-col items-center shadow-sm">
-      <span className="text-3xl font-semibold  text-[#244D3F]">
+    <div className="bg-white p-8 border  border-[#E9E9E9] rounded-sm flex flex-col items-center shadow-sm">
+      <span className="text-3xl tracking-tight font-semibold  text-[#244D3F]">
         {value}
       </span>
       <span className="mt-3 text-lg font-normal text-[#64748B] capitalize text-center">
@@ -196,17 +179,17 @@ function StatBox({ label, value}) {
   );
 }
 
-function CheckInOption({ icon, label }) {
-  return (
-    <button className="flex flex-col items-center gap-3 py-8  bg-[#F8FAFC] btn h-auto border-none  rounded-sm shadow-sm">
-      <div className="text-xl text-gray-400 ">
-        {icon}
-      </div>
-      <span className="text-lg font-normal text-[#1F2937] uppercase ">
-        {label}
-      </span>
-    </button>
-  );
-}
+// function CheckInOption({ icon, label }) {
+//   return (
+//     <button className="flex flex-col items-center gap-3 py-8  bg-[#F8FAFC] btn h-auto border-none  rounded-sm shadow-sm">
+//       <div className="text-xl text-gray-400 ">
+//         {icon}
+//       </div>
+//       <span className="text-lg font-normal text-[#1F2937] uppercase ">
+//         {label}
+//       </span>
+//     </button>
+//   );
+// }
 
 export default FriendDetails;
