@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 
-import Footerlogo from "@/assets /logo-xl.png";
-import SocialFacebookIcon from "@/assets /facebook.png";
-import SocialInstragramIcon from "@/assets /instagram.png";
-import SocialTiwtterIcon from "@/assets /twitter.png";
+import Footerlogo from "@/assets/logo-xl.png";
+import SocialFacebookIcon from "@/assets/facebook.png";
+import SocialInstragramIcon from "@/assets/instagram.png";
+import SocialTiwtterIcon from "@/assets/twitter.png";
 
 const Footer = () => {
   return (

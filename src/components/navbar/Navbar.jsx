@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 
 import { LuClock,LuMenu, LuX } from "react-icons/lu";
 import {FaHome,FaChartLine} from "react-icons/fa"
-import navlogo from "../../assets /logo.png"
+import navlogo from "../../assets/logo.png"
 import Image from "next/image";
 
 

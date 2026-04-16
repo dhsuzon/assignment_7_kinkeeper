@@ -4,9 +4,9 @@ import { useTimeline } from "@/context/friendContext";
 import Image from "next/image";
 import { useState } from "react"; 
 
-import callIcon from "@/assets /call.png";
-import textIcon from "@/assets /text.png";
-import videoIcon from "@/assets /video.png";
+import callIcon from "@/assets/call.png";
+import textIcon from "@/assets/text.png";
+import videoIcon from "@/assets/video.png";
 
 export default function TimelinePage() {
   const { timeline } = useTimeline();
