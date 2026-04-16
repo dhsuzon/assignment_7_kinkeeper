@@ -7,7 +7,7 @@ import path from "path";
 
 const friendData = async () => {
  
-  await new Promise((resolve) => setTimeout(resolve, 100));
+  await new Promise((resolve) => setTimeout(resolve, 1000));
   const filePath = path.join(process.cwd(), "public", "friendsData.json");
   const jsonData = await fs.readFile(filePath, "utf8");
   return JSON.parse(jsonData);
