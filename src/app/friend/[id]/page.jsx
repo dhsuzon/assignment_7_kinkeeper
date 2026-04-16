@@ -59,7 +59,7 @@ const FriendDetails = async ({ params }) => {
                 alt={friend.name}
                 width={96}
                 height={96}
-                unoptimized={true}
+               
 
                 className="rounded-full object-cover border-2 border-gray-50"
               />

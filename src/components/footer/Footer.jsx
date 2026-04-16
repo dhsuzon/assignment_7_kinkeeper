@@ -8,15 +8,16 @@ import SocialTiwtterIcon from "@/assets/twitter.png";
 
 const Footer = () => {
   return (
-    <footer>
-  
+    <footer className="">
       <div className="bg-[#244D3F] flex flex-col justify-center text-center items-center px-6">
         <div>
           <Image
             src={Footerlogo}
             alt="footer logo"
             loading="eager"
-            className="mx-auto mt-16 md:mt-20 "
+            className="mx-auto mt-16 md:mt-20"
+           
+           
           />
           <p className="mt-4 text-white/80 font-normal text-sm md:text-base max-w-7xl mx-auto">
             Your personal shelf of meaningful connections. Browse, tend, and
@@ -34,26 +35,30 @@ const Footer = () => {
             alt="instagram icon"
             loading="eager"
             className="w-8 h-8 md:w-10 md:h-10"
+            width={32}
+            height={32}
           />
           <Image
             src={SocialFacebookIcon}
             alt="facebook icon"
             loading="eager"
             className="w-8 h-8 md:w-10 md:h-10"
+            width={32}
+            height={32}
           />
           <Image
             src={SocialTiwtterIcon}
             alt="Tiwtter icon"
             loading="eager"
             className="w-8 h-8 md:w-10 md:h-10"
+            width={32}
+            height={32}
           />
         </div>
 
-   
         <p className="container border-t border-white/20 mt-8"></p>
       </div>
 
-   
       <div className="bg-[#244D3F] flex flex-col md:flex-row justify-center md:justify-evenly items-center text-white/50 font-normal text-xs md:text-base py-7 md:py-8 px-6 gap-y-4">
         <div className="text-center">
           <p>&copy; 2026 KeenKeeper. All rights reserved.</p>
