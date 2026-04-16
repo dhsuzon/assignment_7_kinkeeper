@@ -5,7 +5,7 @@
 ---
 
 ## 🚀 Live Demo
-[kinkeeper-project.netlify.app]
+[project_netlify_link](https://kinkeeper-project.netlify.app)
 
 ---
 
