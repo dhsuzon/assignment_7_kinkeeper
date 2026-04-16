@@ -50,7 +50,7 @@ const FriendDetails = async ({ params }) => {
   return (
     <div className="bg-[#F8FAFC] min-h-screen p-4 md:p-10 font-sans">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
-        {/* Left Column: Profile Card */}
+    
         <div className="lg:col-span-4 flex flex-col gap-4">
           <div className="bg-white border border-[#E9E9E9] p-8 flex flex-col items-center rounded-sm shadow-sm">
             <div className="w-24 h-24 relative mb-4">
@@ -59,6 +59,8 @@ const FriendDetails = async ({ params }) => {
                 alt={friend.name}
                 width={96}
                 height={96}
+                unoptimized={true}
+
                 className="rounded-full object-cover border-2 border-gray-50"
               />
             </div>

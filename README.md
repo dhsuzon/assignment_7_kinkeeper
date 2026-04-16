@@ -5,7 +5,7 @@
 ---
 
 ## 🚀 Live Demo
-[project_netlify_link](https://kinkeeper-project.netlify.app)
+[project_vercel_link](https://assignment-7-kinkeeper.vercel.app/)
 
 ---
 
@@ -16,7 +16,7 @@
 - **Charts:** Recharts (for Analytics)
 - **Icons:** React Icons
 - **Notifications:** React Toastify
-- **Deployment:** Netlify
+- **Deployment:** Vercel
 
 ---
 
