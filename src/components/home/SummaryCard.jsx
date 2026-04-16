@@ -19,7 +19,7 @@ const SummaryCard = () => {
               <span className="text-3xl font-semibold text-[#244D3F] mb-2">
                 {card.value}
               </span>
-              <span className="text-lg text-nowrap font-normal text-[#64748B] uppercase tracking-wide text-center">
+              <span className="text-lg text-nowrap font-normal text-[#64748B] capitalize tracking-wide text-center">
                 {card.title}
               </span>
             </div>

@@ -3,12 +3,12 @@
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaPhoneAlt, FaCommentDots, FaVideo } from "react-icons/fa";
-import { useTimeline } from "@/context/friendContext"; // কনটেক্সট ইম্পোর্ট
+import { useTimeline } from "@/context/friendContext"; 
 
 
 
 export default function QuickCheckIn({ friendName }) {
-  const { addTimelineEntry } = useTimeline(); // ফাংশনটি বের করে আনা
+  const { addTimelineEntry } = useTimeline(); 
 
   const handleCheckIn = (type) => {
     const newEntry = {

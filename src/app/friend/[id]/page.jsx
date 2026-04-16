@@ -6,10 +6,7 @@ import {
   FaClock,
   FaArchive,
   FaTrash,
-  FaPhoneAlt,
-  FaCommentDots,
-  FaVideo,
-  FaEdit,
+  
 } from "react-icons/fa";
 
 
@@ -179,17 +176,6 @@ function StatBox({ label, value}) {
   );
 }
 
-// function CheckInOption({ icon, label }) {
-//   return (
-//     <button className="flex flex-col items-center gap-3 py-8  bg-[#F8FAFC] btn h-auto border-none  rounded-sm shadow-sm">
-//       <div className="text-xl text-gray-400 ">
-//         {icon}
-//       </div>
-//       <span className="text-lg font-normal text-[#1F2937] uppercase ">
-//         {label}
-//       </span>
-//     </button>
-//   );
-// }
+
 
 export default FriendDetails;

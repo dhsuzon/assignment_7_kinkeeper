@@ -9,7 +9,7 @@ export default function StatsPage() {
   const { timeline } = useTimeline();
   const [isMounted, setIsMounted] = useState(false);
 
-  // ব্রাউজারে মাউন্ট হওয়া পর্যন্ত অপেক্ষা করা (Hydration error এবং Chart error এড়াতে)
+  
   useEffect(() => {
     setIsMounted(true);
   }, []);
