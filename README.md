@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 👥 KeenKeeper — Friendship Tracker
 
-## Getting Started
+**KeenKeeper** is a modern web application designed to help users keep their friendships alive. It allows you to track interactions, set contact goals, and visualize your social habits through analytics. Never lose touch with your close ones again!
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Live Demo
+[Insert Your Netlify Live Link Here]
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🛠️ Technologies Used
+- **Framework:** Next.js 16 / React.js
+- **Styling:** Tailwindcss daisyui
+- **State Management:** React Context API
+- **Charts:** Recharts (for Analytics)
+- **Icons:** React Icons
+- **Notifications:** React Toastify
+- **Deployment:** Netlify
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ✨ Key Features
 
-To learn more about Next.js, take a look at the following resources:
+### 1. 📊 Friendship Analytics
+Visualize your interaction patterns with a dynamic **Pie Chart**. It tracks the total count of Calls, Texts, and Video interactions from your timeline, giving you a clear picture of how you stay connected.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2. ⏳ Interaction Timeline with Filtering
+Keep a detailed log of every check-in. The Timeline page records the date and type of every interaction. Plus, you can **filter** the history by category (Call, Text, or Video) to find specific memories easily.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 3. 🎯 Quick Check-In & Goal Tracking
+Add new interactions with a single click from the Friend Details page. Whether it's a quick text or a long video call, the app instantly updates your timeline and notifies you with a sleek toast notification.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ⚙️ Installation & Setup
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/dhsuzon/assignment_7_kinkeeper.git](https://github.com/dhsuzon/assignment_7_kinkeeper.git)
