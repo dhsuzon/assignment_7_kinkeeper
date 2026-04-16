@@ -31,19 +31,19 @@ export default function StatsPage() {
 
   return (
    
-    <div className="bg-[#F8FAFC] flex-1 py-10 md:py-16 px-4 w-full overflow-hidden">
+    <div className="bg-[#F8FAFC] justify-center items-center flex-1 py-10 md:py-16 px-4 w-full overflow-hidden">
    
-      <div className="max-w-4xl mx-auto w-full">
-        <h2 className="text-[32px] md:text-[40px] font-bold text-[#1F2937] mb-8 md:mb-12">
+      <div className="max-w-4xl  mx-auto w-full">
+        <h2 className="text-[32px] md:text-5xl font-bold text-[#1F2937] mb-8 md:mb-12">
           Friendship Analytics
         </h2>
 
-        <div className="bg-white border border-[#E9E9E9] rounded-sm p-6 md:p-10 shadow-sm w-full">
-          <h3 className="text-xl font-medium text-[#244D3F] mb-8">
+        <div className="bg-white relative flex justify-center items-center border border-[#E9E9E9] rounded-sm p-6 md:p-10 shadow-sm w-full">
+          <h3 className="text-xl absolute left-8 top-8 font-medium text-[#244D3F] mb-8">
             By Interaction Type
           </h3>
 
-          <div className="w-full flex justify-center items-center min-h-[350px] md:min-h-[400px]">
+          <div className="w-full flex justify-center items-center  min-h-87.5 ">
             {hasData ? (
               <PieChart width={300} height={350}> 
                 <Pie

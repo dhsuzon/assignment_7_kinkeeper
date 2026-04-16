@@ -16,8 +16,6 @@ const Footer = () => {
             alt="footer logo"
             loading="eager"
             className="mx-auto mt-16 md:mt-20"
-           
-           
           />
           <p className="mt-4 text-white/80 font-normal text-sm md:text-base max-w-7xl mx-auto">
             Your personal shelf of meaningful connections. Browse, tend, and
